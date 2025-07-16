@@ -20,12 +20,12 @@ body {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(135deg, #000000 0%, #FF6B00 100%);
+    background: linear-gradient(135deg, #000000 0%, #8800ff 100%);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 20px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 2px 20px rgba(193, 17, 220, 0.3);
 }
 
 .nav-container {
@@ -38,7 +38,7 @@ body {
 }
 
 .nav-logo h2 {
-    color: #FF6B00;
+    color: #8800ff;
     font-size: 1.8rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -61,14 +61,14 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    background: #FF6B00;
-    border-color: #FF6B00;
+    background: #8800ff;
+    border-color: #8800ff;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+    box-shadow: 0 5px 15px rgba(127, 1, 147, 0.4);
 }
 
 .nav-user {
-    color: #FF6B00;
+    color: #8800ff;
     font-weight: 500;
 }
 
@@ -90,37 +90,37 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #FF6B00 0%, #FF8533 100%);
+    background: linear-gradient(135deg, #8800ff 0%, #8800ff 100%);
     color: #000;
-    border-color: #FF6B00;
+    border-color: #8800ff;
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 107, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(167, 3, 167, 0.265);
     background: linear-gradient(135deg, #FF8533 0%, #FF6B00 100%);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #FF6B00;
-    border-color: #FF6B00;
+    color: #8800ff;
+    border-color: #8800ff;
 }
 
 .btn-secondary:hover {
-    background: #FF6B00;
+    background: #8800ff;
     color: #000;
     transform: translateY(-3px);
 }
 
 .btn-danger {
-    background: #dc3545;
+    background: #8800ff;
     color: white;
-    border-color: #dc3545;
+    border-color: #8800ff;
 }
 
 .btn-danger:hover {
-    background: #c82333;
+    background: #8800ff;
     transform: translateY(-3px);
 }
 
@@ -136,7 +136,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #000000 0%, #FF6B00 50%, #000000 100%);
+    background: linear-gradient(135deg, #000000 0%, #8800ff 50%, #000000 100%);
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -172,7 +172,7 @@ body {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #FF6B00, #FFB366);
+    background: linear-gradient(135deg, #8800ff, #9104ce);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -209,7 +209,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #FF6B00;
+    color: #8800ff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -224,7 +224,7 @@ body {
     padding: 2rem;
     border-radius: 15px;
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -247,8 +247,8 @@ body {
 
 .feature-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(255, 107, 0, 0.3);
-    border-color: #FFB366;
+    box-shadow: 0 15px 30px rgba(163, 8, 215, 0.3);
+    border-color: #b91aee;
 }
 
 .feature-icon {
@@ -259,7 +259,7 @@ body {
 .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #FF6B00;
+    color: #8800ff;
 }
 
 .feature-card p {
@@ -272,7 +272,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #000000 0%, #FF6B00 50%, #000000 100%);
+    background: linear-gradient(135deg, #000000 0%, #8800ff 50%, #000000 100%);
     padding: 2rem;
 }
 
@@ -281,7 +281,7 @@ body {
     padding: 3rem;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
     width: 100%;
     max-width: 400px;
     position: relative;
@@ -295,7 +295,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent, #FF6B00, transparent);
+    background: conic-gradient(from 0deg, transparent, #8800ff, transparent);
     animation: rotate 4s linear infinite;
     z-index: -1;
 }
@@ -324,7 +324,7 @@ body {
 .auth-header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #FF6B00;
+    color: #8800ff;
 }
 
 .auth-header h2 {
@@ -349,7 +349,7 @@ body {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: #FF6B00;
+    color: #8800ff;
 }
 
 .form-group input,
@@ -367,8 +367,8 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #FF6B00;
-    box-shadow: 0 0 10px rgba(255, 107, 0, 0.3);
+    border-color: #8800ff;
+    box-shadow: 0 0 10px rgba(171, 10, 230, 0.3);
     background: #3a3a3a;
 }
 
@@ -377,7 +377,7 @@ body {
 }
 
 .auth-footer a {
-    color: #FF6B00;
+    color: #8800ff;
     text-decoration: none;
     font-weight: 600;
 }
@@ -397,7 +397,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #FF6B00;
+    color: #8800ff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -412,13 +412,13 @@ body {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
     transition: all 0.3s ease;
 }
 
 .movie-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(175, 5, 231, 0.3);
 }
 
 .movie-poster {
@@ -445,7 +445,7 @@ body {
 .movie-info h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #FF6B00;
+    color: #8800ff;
 }
 
 .movie-rating {
@@ -456,11 +456,11 @@ body {
 }
 
 .stars {
-    color: #FFD700;
+    color: #bd0ed4;
 }
 
 .rating-value {
-    color: #FF6B00;
+    color: #7a09b7;
     font-weight: bold;
 }
 
@@ -484,7 +484,7 @@ body {
 .price {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #FF6B00;
+    color: #8800ff;
 }
 
 /* Booking Section */
@@ -498,12 +498,12 @@ body {
     padding: 2rem;
     border-radius: 15px;
     margin-bottom: 2rem;
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
     text-align: center;
 }
 
 .movie-details h1 {
-    color: #FF6B00;
+    color: #8800ff;
     margin-bottom: 1rem;
 }
 
@@ -512,11 +512,11 @@ body {
     padding: 2rem;
     border-radius: 15px;
     margin-bottom: 2rem;
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
 }
 
 .show-times h3 {
-    color: #FF6B00;
+    color: #8800ff;
     margin-bottom: 1rem;
 }
 
@@ -533,17 +533,17 @@ body {
 
 .time-slot {
     padding: 12px 24px;
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 600;
-    color: #FF6B00;
+    color: #8800ff;
     background: transparent;
 }
 
 .time-slots input[type="radio"]:checked + .time-slot {
-    background: #FF6B00;
+    background: #8800ff;
     color: #000;
     transform: scale(1.05);
 }
@@ -553,11 +553,11 @@ body {
     padding: 2rem;
     border-radius: 15px;
     margin-bottom: 2rem;
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
 }
 
 .screen {
-    background: linear-gradient(135deg, #FF6B00 0%, #FFB366 100%);
+    background: linear-gradient(135deg, #8800ff 0%, #920bd1 100%);
     color: #000;
     text-align: center;
     padding: 15px;
@@ -566,7 +566,7 @@ body {
     border-radius: 15px;
     font-weight: bold;
     font-size: 1.2rem;
-    box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(75, 2, 104, 0.3);
 }
 
 .seats-container {
@@ -611,8 +611,8 @@ body {
 }
 
 .seat.available {
-    background: #28a745;
-    border-color: #28a745;
+    background: #8800ff;
+    border-color: #8800ff;
     color: white;
 }
 
@@ -621,19 +621,19 @@ body {
     border-color: #ae54ceed;
     color: #000;
     transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 107, 0, 0.6);
+    box-shadow: 0 0 15px rgba(130, 5, 213, 0.6);
 }
 
 .seat.occupied {
-    background: #dc3545;
-    border-color: #dc3545;
+    background: #8800ff;
+    border-color: #8800ff;
     color: white;
     cursor: not-allowed;
 }
 
 .seat.available:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(40, 167, 69, 0.6);
+    box-shadow: 0 0 10px rgba(123, 5, 192, 0.6);
 }
 
 .seat-legend {
@@ -663,11 +663,11 @@ body {
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
     padding: 2rem;
     border-radius: 15px;
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
 }
 
 .summary-details h3 {
-    color: #FF6B00;
+    color: #8800ff;
     margin-bottom: 1rem;
 }
 
@@ -681,8 +681,8 @@ body {
 .summary-details .total {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #FF6B00;
-    border-top: 2px solid #FF6B00;
+    color: #8800ff;
+    border-top: 2px solid #8800ff;
     padding-top: 1rem;
     margin-top: 1rem;
 }
@@ -692,7 +692,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #FF6B00;
+    color: #8800ff;
 }
 
 .tickets-grid {
@@ -705,7 +705,7 @@ body {
     background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
     border-radius: 15px;
     padding: 2rem;
-    border: 2px solid #FF6B00;
+    border: 2px solid #8800ff;
     position: relative;
     overflow: hidden;
 }
@@ -717,7 +717,7 @@ body {
     left: 0;
     width: 5px;
     height: 100%;
-    background: linear-gradient(180deg, #FF6B00 0%, #FFB366 100%);
+    background: linear-gradient(180deg, #8800ff 0%, #890fd4 100%);
 }
 
 .ticket-header {
@@ -726,11 +726,11 @@ body {
     align-items: center;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px dashed #FF6B00;
+    border-bottom: 2px dashed #8800ff;
 }
 
 .ticket-header h3 {
-    color: #FF6B00;
+    color: #8800ff;
     font-size: 1.3rem;
 }
 
@@ -752,7 +752,7 @@ body {
 .detail-row.total {
     font-weight: bold;
     font-size: 1.1rem;
-    color: #FF6B00;
+    color: #8800ff;
     border-top: 1px solid #444;
     padding-top: 0.5rem;
     margin-top: 1rem;
@@ -781,7 +781,7 @@ body {
 .empty-state h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #FF6B00;
+    color: #8800ff;
 }
 
 /* Footer */
@@ -791,7 +791,7 @@ body {
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
-    border-top: 2px solid #FF6B00;
+    border-top: 2px solid #8800ff;
 }
 
 /* Responsive Design */

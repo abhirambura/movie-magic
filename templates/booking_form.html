@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Tickets - MovieMagic</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .seat-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .seat {
+            width: 30px;
+            height: 30px;
+            background-color: #888;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+        }
+        .selected {
+            background-color: #6c5ce7;
+        }
+        .summary {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">🎟 Book Your Seat for {{ movie }}</h1>
+
+    <form action="/book" method="POST" style="text-align: center;">
+        <input type="hidden" name="movie" value="{{ movie }}">
+        
+        <label for="date">Date:</label>
+        <input type="date" name="date" required><br><br>
+
+        <label for="time">Time:</label>
+        <select name="time" required>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="7:00 PM">7:00 PM</option>
+        </select><br><br>
+
+        <h3>Select Your Seats:</h3>
+        <div class="seat-grid" id="seatGrid">
+            {% for i in range(1, 33) %}
+                <div class="seat" data-seat="S{{ i }}">{{ i }}</div>
+            {% endfor %}
+        </div>
+
+        <div class="summary">
+            <p>Selected Seats: <span id="selectedSeats">None</span></p>
+            <p>Total Amount: ₹<span id="totalAmount">0.00</span></p>
+        </div>
+
+        <input type="hidden" name="seat" id="hiddenSeats">
+        <button type="submit" id="bookButton" disabled>Book Ticket</button>
+    </form>
+
+    <script>
+        const seats = document.querySelectorAll('.seat');
+        const selectedSeatsDisplay = document.getElementById('selectedSeats');
+        const totalAmountDisplay = document.getElementById('totalAmount');
+        const hiddenSeatsInput = document.getElementById('hiddenSeats');
+        const bookButton = document.getElementById('bookButton');
+        let selectedSeats = [];
+
+        seats.forEach(seat => {
+            seat.addEventListener('click', () => {
+                const seatValue = seat.getAttribute('data-seat');
+                seat.classList.toggle('selected');
+
+                if (selectedSeats.includes(seatValue)) {
+                    selectedSeats = selectedSeats.filter(s => s !== seatValue);
+                } else {
+                    selectedSeats.push(seatValue);
+                }
+
+                updateBookingSummary();
+            });
+        });
+
+        function updateBookingSummary() {
+            const pricePerSeat = 150;
+            const seatsDisplay = selectedSeats.join(", ");
+            const total = (selectedSeats.length * pricePerSeat).toFixed(2);
+
+            selectedSeatsDisplay.textContent = seatsDisplay || 'None';
+            totalAmountDisplay.textContent = total;
+            hiddenSeatsInput.value = selectedSeats.join(",");
+            bookButton.disabled = selectedSeats.length === 0;
+        }
+    </script>
+</body>
+</html>
